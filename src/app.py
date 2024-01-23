@@ -1,3 +1,4 @@
+import os
 from random import randrange
 
 # function will return random number between start and end parameter where end is included
@@ -11,3 +12,6 @@ def max_num_in_list( list ):
         if a < max:
             max = a
     return max
+
+def rm(filename):
+    os.remove(filename)
